@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>            
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page - The Stock Market</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style> 
+         @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Poppins:wght@300&family=Rubik:wght@300&display=swap'); 
+        </style>
+        <!-- This code is for the header; first thing to be seen when entering the website-->
+        <div class="header">
+            <div class="header-text">
+                <p><b><i>Compound Calculator</i></b></p>
+                <h1>The Stock Market</h1>
+                <p><i>A Powertool in Investing</i></p>
+                <p style="color:white">Brought to you by Haresh Goyal</p>
+            </div>
+        </div>        
+        <!-- This is for the navigation bar-->
+        <div class="topnav">           
+            <nav id="navbar">
+                <img src="investing.graph.png" id="image1" align="left">
+                <a id="nav" href="(1.0)index.html">Home</a>
+                <a id="nav" href="(2)investingTips.html">Investing Tips!</a>
+                <a id="nav" href="(3)quiz.html">Test Your Knowledge!</a>
+                <a id="nav" href="(4)importance.html">Importance of Investing</a>
+                <a id="nav" href="(5)calculator.html">Compound Calculator</a>
+            </nav>
+        </div>
+        </div>
+        <!--Content to be displayed-->
+        <div class="container1">
+            <br>
+            <p style="text-align:center; font-size:50px; margin-left:10%; margin-right:10%"><b><i>“Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it”
+            </i></b></p>
+            <hr>
+        </div>
+        <div style="background-color: #231f20; color:#F5BD1F">
+            <hr>
+            <p style="text-align:left; font-size:25px; margin-left:10%; margin-right:10%">
+            <br>
+            Compound interest is interest computed on a deposit based on both the initial principle and the accumulated interest from prior periods. 1 In other words, compound interest is interest earned on interest. You can compound interest at various intervals, such as daily, monthly, or yearly.<img src="compounding.jpg" id="slideshow2" style="margin-left:5%;">
+            <br><br>       
+            The more compounding periods there are, the bigger the compounded interest. Consider it like a snowball. The earlier you begin to save and the more money you put to your snowball, the greater it will grow. Consider what would happen if you pushed the snowball down a snow-covered slope. The snow you've previously packed will remain, and you'll collect much more. When your snowball reaches the bottom of the slope, it will eventually contain the snow.
+           <br><br>
+           <b>Why is compound interest important?</b>
+           <br>
+           Compound interest accelerates the growth of your money. It grows an amount of money quicker than simple interest since you get returns on the money you invest as well as returns at the conclusion of each compounding period. This implies you won't need to save as much money to achieve your goals!
+            <br>
+            <hr>
+            </p>
+        </div>
+        <div class="container1">
+            <br>
+            <!--Places to input the information needed to calculate compound interest-->
+            <h1 style="text-align:center; font-size:50px; margin-left:10%; margin-right:10%">Compound Calculator</h1>
+            <div class="input-group">
+            <!--A place to enter intial amount-->
+                <label for="initialamount">Initial Amount</label>
+                <input type="number" id="initialamount" />
+            </div>
+            <!--A place to enter the number of years you will invest-->
+            <div class="input-group">
+                <label for="years">Investment Years</label>
+                <input type="number" id="years" />
+            </div>
+            <!--A place to input your ROI-->
+            <div class="input-group">
+                <label for="rates">Rate of Investment(%)</label>
+                <input type="number" id="rates" />
+            </div>
+            <!--A place to indicate how often your money will compound-->
+            <div class="input-group">
+                <label for="rates">Intervals</label>
+                <select id="intervals">
+                    <option value="1">Annualy</option>
+                    <option value="4">Quartely</option>
+                    <option value="2">Semiannualy</option>
+                    <option value="12">Monthly</option>
+                </select>
+            </div>
+            <!--Once the information is inputted, the submit button will employ a javascript function-->
+            <div class="input-group">
+                <button onclick="calculateGrowth()">Calculate</button>
+            </div>
+            <br>
+            <p id="paragraph" style="font-size:20px; text-align: center; font-size: 30px;"><b>Results...</b></p>
+        </div>
+        <script>
+            // we assign variables to the input retrived
+                var intialAmount = document.getElementById("initialamount");
+                var years = document.getElementById("years");
+                var rates = document.getElementById("rates");
+                var compound = document.getElementById("intervals");
+                
+            // when the submit button is pressed, the input is turned into useable data (in numbers), so that we can perform a calculation
+                function calculateGrowth(){
+                var initial = parseInt(intialAmount.value);
+                var period = parseInt(years.value);
+                var interest = parseInt(rates.value);
+                var comp = parseInt(compound.value);
+                
+                for(var count = 1; count <= period; count++) {
+            var final = (initial * Math.pow(1 + ((interest / 100) / comp), comp * count)); //this uses the compound interest formula to make the calculation
+              }
+              //this tells the user the total value of their initial investment
+              document.getElementById("paragraph").innerHTML = "In " + period + " years, "  +  "the total value of your investment would be $" + final.toFixed(2);
+            }
+        </script>
+    </body>
+</html>

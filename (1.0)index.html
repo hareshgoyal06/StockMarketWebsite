@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>            
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page - The Stock Market</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Poppins:wght@300&family=Rubik:wght@300&display=swap'); 
+        .container1, .container2, .container4 {
+                background-image:url("paper.jpg");
+            }   
+        .container3 {
+            background-color: #231f20;
+        }
+            hr {
+    border-top: 3px solid #F5BD1F;
+    /*Design properties for tables */
+            } 
+            
+            table, th, td {
+                margin-left:5%;
+                margin-right:5%;
+                border:1px solid black;
+            }
+
+            td {
+                box-align:left;
+                text-indent: 5px;
+            }
+
+            th {
+                background-color: #231f20;
+                color:#F5BD1F;
+                font-size:20px;
+            }
+    /* Extra design properties for the buttons used*/
+            .start {
+                background-color: #F5BD1F;
+                border: none;
+                color: white;
+                padding: 13px 27px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 26px;
+                cursor: pointer;
+                margin-left: auto;
+                transition-duration: 0.6s;
+                border: 2px solid #F5BD1F;
+                width:100%
+                
+            }
+
+            .start:hover {
+                background-color: white;
+                color: #F5BD1F;
+                border: 2px solid #F5BD1F;
+            }
+            </style>
+<!-- This code is for the header; first thing to be seen when entering the website-->
+         <div class="header">
+            <div class="header-text">
+                <p><b><i>Home Page</i></b></p>
+                <h1>The Stock Market</h1>
+                <p><i>A Powertool in Investing</i></p>
+                <p style="color:white">Brought to you by Haresh Goyal</p>
+            </div>
+        </div>        
+<!-- This is for the navigation bar-->
+        <div class="topnav">           
+            <nav id="navbar">
+                <img src="investing.graph.png" id="image1" align="left">
+                <a id="nav" href="(1.0)index.html">Home</a>
+                <a id="nav" href="(2)investingTips.html">Investing Tips!</a>
+                <a id="nav" href="(3)quiz.html">Test Your Knowledge!</a>
+                <a id="nav" href="(4)importance.html">Importance of Investing</a>
+                <a id="nav" href="(5)calculator.html">Compound Calculator</a>
+            </nav>
+        </div>
+ <!-- This is where all the information will go, along with images and such-->
+        <div class="container1">
+            <br>
+            <h1 style="text-align:center; font-size:35px"><b>About the Stock Market!</b></h1>
+            <p style="text-align:center; font-size:30px; margin-left:10%; margin-right:10%"><i>In the world of finance, you <b>cannot escape</b> the stock market. With financial literacy becoming more and more prominent, the popularity of the stock market is rising with it. This is for good reason as well, as the stock market is a very effective way of multiplying your cash, if used properly.</i></p>
+            <br>
+            <hr>
+        </div>
+        <div class="container2">
+            <br>
+            <img src="Nasdaq-Stocks.jpg" id="slideshow">
+            <h1 style="text-align:left; font-size:30px; margin-left:5%;">So what exactly is the stock market?</h1> 
+            <p style="text-align:left; font-size:20px; margin-left:5%; margin-right: 50%;">
+            The stock market refers to a variety of exchanges and other places where publicly traded firms' shares can be purchased and sold. These financial transactions take occur on established official exchanges (physical or electronic) and over-the-counter (OTC) markets that are governed by a set of rules.
+            <br>
+            <br>
+                While "stock market" and "stock exchange" are sometimes used interchangeably, the latter is really a subset of the former. Stock market traders purchase and sell shares on one or more of the stock exchanges that make up the entire stock market.
+            <br>
+            <br>
+                The New York Stock Exchange (NYSE) and the Nasdaq are the two most important stock exchanges in the United States. Canada has its own stock exchange, known as the Toronto Stock Exchange (TSX), more known for its selection of Canadian companies. 
+            </p>
+            <br>
+            <br> 
+            <iframe width="560" height="315" style="border: 5px solid #F5BD1F; float:left; margin-left:5%; margin-top:20px;" 
+                src="https://www.youtube.com/embed/ZCFkWDdmXG8" allowfullscreen>
+            </iframe>
+            <p style="text-align:left; font-size:20px; margin-right:5%; margin-left: 50%;">
+                In such trading operations, the stock exchange is responsible for assuring price transparency, liquidity, price discovery, and fair transactions.
+            <br>
+            <br> 
+                The exchange maintains trading systems that efficiently process buy and sell orders from diverse market participants, as practically all major stock exchanges across the world now function electronically. They execute the price-matching function to make trade execution easier for both buyers and sellers at a fair price.
+            <br>
+            <br> 
+                The stock exchange frequently generates and maintains numerous market-level and sector-specific indices, such as the S&P (Standard & Poor's) 500 index and the Nasdaq 100 index, to track the overall market's behaviour. 
+            </p>
+            <br>
+            <hr>
+        <!--Button with JS embedded-->
+            <button onclick="funFacts()" class = "start">Click to Learn some FUN FACTS</button></div>
+        </div>
+        <div class="container3">
+            <br>
+            <h1 style="text-align:left; font-size:30px; margin-left:5%; color:#F5BD1F">How the Stock Market Works:</h1> 
+            <img src="HowMarketsWork.png" id="image4">
+            <p style="text-align:left; font-size:20px; margin-right:5%; margin-left: 5%; color:#F5BD1F">
+                Stock markets provide a safe and regulated environment in which market participants may confidently trade shares and other qualified financial instruments with little to no danger of losing money. The stock markets operate as primary and secondary markets, according to the guidelines set forth by the regulator. 
+            <br>
+            <br> 
+                The stock market, as a primary market, permits corporations to issue and sell their shares to the general public for the first time through an initial public offering (IPO) (IPO). This practise aids businesses in obtaining the funding they want from investors.
+            <br>
+            <br> 
+                This simply implies that a corporation splits itself into a number of shares (for example, 20 million) and sells part of those shares to the public for a price (for example, $10 per share). 
+            <br>
+            <br>
+                A corporation will require a marketplace where these shares may be sold to make this process easier. The stock market provides this marketplace.
+            <br>
+            <br>
+            If all goes according to plan, the corporation will be able to sell its 5 million shares for $10 each, netting $50 million. Investors will then purchase firm shares in the hopes of increasing their value or receiving dividend payments, or both.
+            <br>
+            <br>
+            We will discuss how investors can truly take advantage of the stock market 
+            <a href=(2)investingTips.html. style="color: white">here</a> 
+            <br>
+            <br>
+        </p>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <!--A table to showcase important terms used in the stock market-->
+        <div class="container4">
+            <br>
+            <h1 style="text-align:left; font-size:30px; margin-left:5%;">Key Terms to Know</h1> 
+            <table>
+                <tr>
+                    <th>Terms</th>
+                    <th>Definition</th>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Buy</b></td>
+                    <td>To take a position by buying shares of a company.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Sell</b></td>
+                    <td>To sell the shares you currently own.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Bid</b></td>
+                    <td>When a trader in the market makes an offer to buy shares.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Ask</b></td>
+                    <td>When a trader offers their shares for sale at a certain price.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Bull Market</b></td>
+                    <td>A market condition where stock prices are continually rising.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Bear Market</b></td>
+                    <td>A bear market is the opposite of a bull market. It’s a market in which prices continually fall.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Volatility</b></td>
+                    <td>The statistical measure of how much a stock moves up or down.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>liquidity</b></td>
+                    <td>The measure of how easy it is to buy and sell a stock.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Market Capatilization</b></td>
+                    <td>The total value of all a company’s shares.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Outstanding Shares</b></td>
+                    <td>This is the total number of a company’s shares.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>IPO</b></td>
+                    <td>It’s when a company goes through the process of selling shares on the stock market for the first time.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Hedge Funds</b></td>
+                    <td>A hedge fund is a type of investment fund that often uses non-standard investment and trading techniques.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Mutual Funds</b></td>
+                    <td>Mutual funds are pools of investor capital for investing in stocks, bonds, and other financial assets.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>ETFs</b></td>
+                    <td>ETFs are similar to mutual funds — they’re pools of capital used for investment purposes. But instead of wiring your money into the fund, you can purchase shares of the ETF on a stock exchange.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>Dividend</b></td>
+                    <td>This is when a company pays a portion of its earnings to its shareholders. Long-term investors and retirees generally focus on dividend.</td>
+                </tr>
+                <tr>
+                    <td style="background-color:#F5BD1F; color:#231f20;"><b>P/E Ratio</b></td>
+                    <td>A ratio of a company's stock price to how much it earns. </td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <!--Popular Company Logos with embedded links with more information on their respective stocks-->
+            </div>    
+            <div class="container3">
+                <br>
+                <h1 style="text-align:center; font-size:30px; color:#F5BD1F">Click on the logos, to learn more about some of the popular stocks on the market.</h1> 
+                <p style="text-align:center; font-size:25px; color:#F5BD1F">You can apply your knowledge from the table above to help you understand more about these stocks.</p>
+                <br>
+                    <a href="https://finance.yahoo.com/quote/AAPL/">
+                        <img src="applelogo.png" style="width:22%; border:5px solid #F5BD1F">
+                    </a>
+                    <a href="https://finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch">
+                        <img src="amazonlogo.png" style="width:22%; border:5px solid #F5BD1F">
+                    </a>
+                    <a href="https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-src">
+                        <img src="teslastock.png" style="width:22%; border:5px solid #F5BD1F">
+                    </a>
+                    <a href="https://finance.yahoo.com/quote/META?p=META&.tsrc=fin-srch">
+                        <img src="metastock.png" style="width:22%; border:5px solid #F5BD1F">
+                    </a>
+            </div>
+        <script>
+        // Simple JS code, using array and the prompt function to give the user to randomly select random fun facts to learn 
+        
+            function funFacts() {
+                var facts = ["The world's oldest stock market began in Belgium in 1460.", "There are more than 60 stock exchanges in the world!", "The United States makes 40% of the world stock market", "The stock market is 70% likely to go up on any year", "September is the worst month for stock gains"]
+                var selectFact = parseInt(prompt("Input a random number from 1 to 5:"));
+                alert(facts[selectFact - 1]);
+            }
+        </script> 
+    </body>
+</html>

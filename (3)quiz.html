@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>            
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page - The Stock Market</title>
+        <link rel="shortcut icon" type="image/png" href="favicon2.ico">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style> 
+         @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Poppins:wght@300&family=Rubik:wght@300&display=swap'); 
+         /*Design for buttons*/
+         .start, .resources {
+                background-color: #F5BD1F;
+                border: none;
+                color: white;
+                padding: 13px 27px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 26px;
+                margin: 5px 3px;
+                cursor: pointer;
+                margin-left: auto;
+                transition-duration: 0.6s;
+                border: 2px solid #F5BD1F;
+            }
+        
+        .start {
+            width:100%;
+        }
+
+        .resources {
+            width:40%;
+            margin-left:27%; 
+            color:white;
+        }
+
+            .start:hover, .resources:hover {
+                background-color: white;
+                color: #F5BD1F;
+                border: 2px solid #F5BD1F;
+            
+            /*Design elements for the form*/
+            }
+            input[type=text], select {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                }
+            </style>
+        <!-- This code is for the header; first thing to be seen when entering the website-->
+        <div class="header">
+            <div class="header-text">
+                <p><b><i>Quiz Time</i></b></p>
+                <h1>The Stock Market</h1>
+                <p><i>A Powertool in Investing</i></p>
+                <p style="color:white">Brought to you by Haresh Goyal</p>
+            </div>
+        </div>        
+        <!-- This is for the navigation bar-->
+        <div class="topnav">           
+            <nav id="navbar">
+                <img src="investing.graph.png" id="image1" align="left">
+                <a id="nav" href="(1.0)index.html">Home</a>
+                <a id="nav" href="(2)investingTips.html">Investing Tips!</a>
+                <a id="nav" href="(3)quiz.html">Test Your Knowledge!</a>
+                <a id="nav" href="(4)importance.html">Importance of Investing</a>
+                <a id="nav" href="(5)calculator.html">Compound Calculator</a>
+            </nav>
+        </div>
+        <div class="container1">
+            <br>
+            <p style="text-align:center; font-size:30px; margin-left:10%; margin-right:10%"><i>Get ready to test out your knowledge in this quiz. It will reflect the content learned within the <a href=(1.0)index.html style="color:#F5BD1F"><b>"Home"</b></a> and <a href=(2)investingTips.html style="color:#F5BD1F"><b>"Investing Tips"</b></a> pages. <br><br> Don't feel discouraged if you don't do too well the first time around, as for some, this is a very new topic; it takes a while to fully grasp. :D </b></i></p>
+            <br>
+        <!--This is just to advance the webpage further down, by automatically scrolling it-->
+            <button onclick="startUp()" class = "start">Let's Get Started!</button></div>
+            <hr>
+        </div>
+        <div>
+            <img src="prices.jpeg" id="filler">
+        </div>
+            <div style="background-color: #52504a; color:#F5BD1F; margin:5px;">
+                <br>
+                <h1 style="margin:5px; text-align:center; color:#F5BD1F;">Quiz Time!</h1>
+                <br>
+        <!--Input your age here-->
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <br>
+        <!--Multiple Choice Questions are offered here-->
+                <p><b>Multiple Choice Section:</b></p>
+                <br>
+                <label>Which of the following is not an effective investing strategy?</label>
+                <br>
+                <input type = "radio" id = "q1a" name = "answer1"/>
+                <label for = "q1">Diversifying</label>
+                <br>
+                <input type = "radio" id = "q1b" name = "answer1"/>
+                <label for = "q1">Dollar Cost Averaging</label>
+                <br>
+                <input type = "radio" id = "q1c" name = "answer1"/>
+                <label for = "q1">Using Your Emotions</label>
+                <br>
+                <input type = "radio" id = "q1d" name = "answer1"/>
+                <label for = "q1">None of the Above</label>
+                <br><br>
+                <br>
+                <label>Between the ages of 20-30, how should you allocate your portfolio?</label>
+                <br>
+                <input type = "radio" id = "q2a" name = "answer2"/>
+                <label for = "q2">100% - 0% (Stocks - Bonds)</label>
+                <br>
+                <input type = "radio" id = "q2b" name = "answer2"/>
+                <label for = "q2">80% - 20% (Stocks - Bonds)</label>
+                <br>
+                <input type = "radio" id = "q2c" name = "answer2"/>
+                <label for = "q2">50% - 50% (Stocks - Bonds)</label>
+                <br>
+                <input type = "radio" id = "q2d" name = "answer2"/>
+                <label for = "q2">30% - 70% (Stocks - Bonds)</label>
+                <br><br>
+                <label>What is the definition of "volatility"?</label>
+                <br>
+                <input type = "radio" id = "q3a" name = "answer3"/>
+                <label for = "q3">The statistical measure of how much a stock moves up or down.</label>
+                <br>
+                <input type = "radio" id = "q3b" name = "answer3"/>
+                <label for = "q3">The measure of how easy it is to buy and sell a stock.</label>
+                <br>
+                <input type = "radio" id = "q3c" name = "answer3"/>
+                <label for = "q3">The total value of all a company’s shares.</label>
+                <br><br>
+                <label>What is the suggest maximum that an individual stock/equity takes up in your portfolio? </label>
+                <br>
+                <input type = "radio" id = "q4a" name = "answer4"/>
+                <label for = "q4">30%</label>
+                <br>
+                <input type = "radio" id = "q4b" name = "answer4"/>
+                <label for = "q4">50%</label>
+                <br>
+                <input type = "radio" id = "q4c" name = "answer4"/>
+                <label for = "q4">10%</label>
+                <br>
+                <br>
+                <br>
+            <!--Short Answer Questions are offered here-->
+                <p><b>Short Answer Questions</b></p>
+                <label>Name one of the Two Biggest Stock Exchanges in the United States:</label>
+                <br>
+                <input type = "text" name = "inputbox" id = "q5" />
+                <br><br>
+                <label>A market condition where stock prices are continually rising.</label>
+                <br>
+                <input type = "text" name = "inputbox" id = "q6" />
+                <br><br>
+                <label>This is when a company pays a portion of its earnings to its shareholders.</label>
+                <br>
+                <input type = "text" name = "inputbox" id = "q7" />
+                <br><br>
+                <label>What does IPO stand for?</label>
+                <br>
+                <input type = "text" name = "inputbox" id = "q8" />
+                <br><br>
+                <label>What's a portfolio management method that combines many investments into a single portfolio</label>
+                <br>
+                <input type = "text" name = "inputbox" id = "q9" />
+                <br><br>
+            <!--You submit your quiz with this button-->
+                <button onclick="submit()" class = "start">submit quiz</button>
+            </div>
+            <br>
+            <div class="container1">
+                <br>
+                <h1 style="text-align:center; font-size:30px; margin-left:10%; margin-right:10%">
+                    Hey! If you're looking to learn more about the stock market, you can access these <b>additional resources</b>
+                </h1>
+                <button class="resources"><a href="https://www.investing.com/">"Investing.com"</a></button>
+                <button class="resources"><a href="https://www.marketwatch.com/">MarketWatch</a></button>
+                <button class="resources"><a href="https://ca.finance.yahoo.com/">"Yahoo Finanace"</a></button>
+            </div>
+        </div>
+    
+        
+        <script>
+            // if button is pressed, the webpage scrolls down
+            function startUp(){
+                    document.querySelector('.start').scrollIntoView({
+            behavior: 'smooth'
+            });    }
+
+            // submit button
+            function submit(){
+            var total = 0  // prior to submitting, you have a score of 0
+            var multipleChoicetotal = 0 // separate score for multiple choice section
+            var shortAnswertotal = 0  // separate score for short answer section
+
+            if (document.getElementById("q1c").checked){ // if your answer is correct, the correct id will match
+            total+=1    // this gives the user an additional score of 1
+            multipleChoicetotal += 1
+            }
+            if (document.getElementById("q2b").checked){
+            total+=1   // the user continues getting 1 score added for ever correct answer
+            multipleChoicetotal += 1
+            }
+
+            if (document.getElementById("q3a").checked){
+            total+=1
+            multipleChoicetotal += 1
+            }
+            if (document.getElementById("q4c").checked){
+            total+=1
+            multipleChoicetotal += 1
+            }
+            
+             var ans = document.getElementById("q5").value.toLowerCase() // this will retrieve the user input on "q5"
+             q5 = ["nyse", "nasdaq", "new york stock exchange"] // these are the possible answers 
+             for(var i = 0; i<q5.length; i++){ // the for loop will run through all possible answers
+                if(q5[i] == ans ){ // checks to see if possible answers match with user input
+                    total += 1 // if it does, user is awarded with 1 extra score
+                    shortAnswertotal += 1
+                    break
+                }
+            }
+
+            var ans = document.getElementById("q6").value.toLowerCase()
+             q6 = ["bull market", "bull", "bullish"]
+             for(var i = 0; i<q6.length; i++){
+                if(q6[i] == ans ){
+                    total += 1
+                    shortAnswertotal += 1
+                    break
+                }
+            }
+
+            var ans = document.getElementById("q7").value.toLowerCase()
+             q7 = ["dividend", "dividend yield", "dividends"]
+             for(var i = 0; i<q7.length; i++){
+                if(q7[i] == ans ){
+                    total += 1
+                    shortAnswertotal += 1
+                    break
+                }
+            }
+
+            var ans = document.getElementById("q8").value.toLowerCase()
+             q8 = ["initial public offering"]
+             for(var i = 0; i<q8.length; i++){
+                if(q8[i] == ans ){
+                    total += 1
+                    shortAnswertotal += 1
+                    break
+                }
+            }
+
+            var ans = document.getElementById("q9").value.toLowerCase()
+            q9 = ["diversify", "diversification", "diversifying"]
+             for(var i = 0; i<q9.length; i++){
+                if(q9[i] == ans ){
+                    total += 1
+                    shortAnswertotal += 1
+                    break
+                }
+            }
+            var mark = ((total/9) * 100).toFixed(2); // this will calculate user's total mark percentage
+            var multipleChoicemark = (multipleChoicetotal/4) * 100; // calculates user's multiple choice section percentage
+            var shortAnswermark = (shortAnswertotal/5) * 100; // calculates user's short answer multiple choice percentage
+            var fname = document.getElementById("fname").value; // retrieves first name input
+            var lname = document.getElementById("lname").value; // retrieves last name input
+
+            alert("Hello " + fname + " " + lname + "\n" + "Multiple Choice Section: " + multipleChoicemark + "%" + "\n" + "Short Answer Section: " + shortAnswermark + "%" +
+            "\n" + "In Total, You Scored " + mark + "% On this Quiz") // notifies user of scores
+                } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>            
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page - The Stock Market</title>
+        <link rel="shortcut icon" type="image/png" href="favicon1.ico">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style> 
+         @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Poppins:wght@300&family=Rubik:wght@300&display=swap'); 
+         /*Extra styling to make buttons in this webpage look attractive */
+            .button {
+                background-color: #F5BD1F;
+                border: none;
+                color: white;
+                padding: 13px 27px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 26px;
+                margin: 5px 3px;
+                cursor: pointer;
+                margin-left: auto;
+                transition-duration: 0.6s;
+                border: 2px solid #F5BD1F;
+                width:13.2%
+            }
+
+            .button:hover {
+                background-color: white;
+                color: #F5BD1F;
+                border: 2px solid #F5BD1F;
+            }
+        </style>
+        <!-- This code is for the header; first thing to be seen when entering the website-->
+        <div class="header">
+            <div class="header-text">
+                <p><b><i>Investing Tips!</i></b></p>
+                <h1>The Stock Market</h1>
+                <p><i>A Powertool in Investing</i></p>
+                <p style="color:white">Brought to you by Haresh Goyal</p>
+            </div>
+        </div>        
+        <!-- This is for the navigation bar-->
+        <div class="topnav">           
+            <nav id="navbar">
+                <img src="investing.graph.png" id="image1" align="left">
+                <a id="nav" href="(1.0)index.html">Home</a>
+                <a id="nav" href="(2)investingTips.html">Investing Tips!</a>
+                <a id="nav" href="(3)quiz.html">Test Your Knowledge!</a>
+                <a id="nav" href="(4)importance.html">Importance of Investing</a>
+                <a id="nav" href="(5)calculator.html">Compound Calculator</a>
+            </nav>
+        </div>
+        <!--Content for the webpage-->
+        <div class="container1">
+        <br>
+        <p style="text-align:center; font-size:30px; margin-left:10%; margin-right:10%"><i>Today’s stock market becomes increasingly more difficult to navigate. Picking the right companies is certainly a hard choice that even some of the greatest investors struggle with. To make matters worse, a number of external factors are always impacting the market. Whether it be hype, or threats from random sources, investors should always stay educated and know what to look for. <br> <br> <b>Here are some tips investors can follow to find success in the markets.</b></i></p>
+        <br>
+        <hr>
+        </div>
+        <div style="width: 100%; display: table;" id="">
+            <div style="display: table-row; height: 100px;  border:1px solid black;">
+                <div style="width: 50%; display: table-cell; background-color: #231f20;">
+                    <h1 style="margin-left:5px; color:#F5BD1F; text-align:center">Diversify!!</h1>
+                    <p style="margin:5%; text-align:center; text-align:justify; font-size:20px; color:#F5BD1F;">
+                        For many financial advisors, fund managers, and individual investors, diversification is a rallying cry. It's a portfolio management method that combines many investments into a single portfolio. Diversification is the concept that a wide range of assets will provide a greater return. It also implies that diversifying one's investment portfolio will reduce risk. Individual equities should not account for more than 10% of your whole portfolio. The balance of your money should be invested in a diverse portfolio of low-cost index mutual funds. Stocks are not a good place to put money if you need it in the next five years.
+                    </p>
+                </div>
+                <div style="display: table-cell; background-color: #F5BD1F;">
+                    <h1 style="margin-left:5px;  text-align:center">Buy into Companies, Not Stocks</h1>
+                           <p style="margin:5%; text-align:left; text-align:justify; font-size:20px; color: #231f20">
+                            Remember that purchasing a share of a company's stock entitles you to a portion of the company's ownership. As you evaluate possible business partners, you'll come across an enormous quantity of data. When donning a "business buyer" hat, though, it's much easier to zero down on the proper items. You want to know how this firm functions, where it fits into the wider industry, who its rivals are, what its long-term prospects are, and whether it adds value to your existing portfolio of enterprises. You may recall the Gamestop craze, when a slew of investors poured money into unproven "meme" businesses, effectively gambling their money away. It resulted in better returns for some, but it resulted in the loss of future savings for others.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!--A tool that displays an image and text when a user selects an age group; its purpose to show users how they should diversify their portfolio based on their age-->
+        <div>
+            <h1 style="text-align:center; font-size:35px"><b>Age-Based Diversification</b></h1>
+            <p style="text-align: center; font-size:20px; margin-left:5%; margin-right: 5%;"> According to some of the world's best analysts, your age is should determine the level of risk you should take. Stocks are relatively risky; meaning we should employ other forms of investments. Let's take a look at how age should diversify your portfolio.</p>
+            <p style="text-align: center; font-size:20px; margin-left:5%; margin-right: 5%;"><b>Please Enter Your Age:</b></p>
+        </div>        
+        <div>
+            <div>
+            <!--These buttons connect JS to the HTMLl-->
+                <input type="button" class="button" value="Under 20" onclick="pic(this)" />
+                <input type="button" class="button" value="20-30" onclick="pic(this)" />
+                <input type="button" class="button" value="30-40" onclick="pic(this)" />
+                <input type="button" class="button" value="40-50" onclick="pic(this)" />
+                <input type="button" class="button" value="50-60" onclick="pic(this)" />
+                <input type="button" class="button" value="70-80" onclick="pic(this)" />
+                <input type="button" class="button" value="Over 80" onclick="pic(this)" />
+            </div>
+            <!--This shows corresponding image based on button-->
+            <div style="width: 40%; float:left">
+                <img src="" id="png" style="width:500px; height:500px; margin:5%; border: 2px solid #F5BD1F;" />
+             </div>
+             
+             <div style="width: 60%; float:right">
+                <br>
+                <br>
+            <!--This shows corresponding text based on button-->
+                <h1>Why Is This The Case?</h1>
+                <p id="paragraph" style="font-size:20px; margin-right:20%;">Click On an Age Group To Learn More!</p>
+             </div>
+            </div>
+            <hr>
+        </div>
+        <div style="width: 100%; display: table;">
+            <div style="display: table-row; height: 100px;  border:1px solid black;">
+                <div style="width: 100%; display: table-cell; background-color: #231f20;">
+                    <br>
+                    <p style="margin-left:5px; color:#F5BD1F; text-align:center">Onto More Tips!</p>
+                    <h1 style="margin-left:5px; color:#F5BD1F; text-align:center">Don’t Let Emotions Get the Best of You!!</h1>
+                    <img src="panic.jpg" id="slideshow" style="margin-left:5%;">
+                    <p style="margin-left:5%; margin-top:3%; text-align:center; text-align:justify; font-size:20px; color:#F5BD1F;">
+                        For many financial advisors, fund managers, and individual investors, diversification is a rallying cry. It's a portfolio management method that combines many investments into a single portfolio. Diversification is the concept that a wide range of assets will provide a greater return. It also implies that diversifying one's investment portfolio will reduce risk. Individual equities should not account for more than 10% of your whole portfolio. The balance of your money should be invested in a diverse portfolio of low-cost index mutual funds. Stocks are not a good place to put money if you need it in the next five years.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class= "container1">
+            <div style="width: 100%; display: table;">
+                <div style="display: table-row; height: 100px;  border:1px solid black;">
+                    <div style="width: 100%; display: table-cell;">
+                        <br>
+                        <h1 style="margin-left:5px; color:#231f20; text-align:center">Build Wealth Gradually… </h1>
+                        <p style="margin:5%; text-align:center; font-size:20px;">
+                            An investor's strength is time, not timing. The most successful investors acquire stocks because they anticipate to be rewarded over years, if not decades, through share price gain, dividends, and other means. That means you may take your time when it comes to purchasing.<br><br> <b><i>Here are two purchasing tactics that will help you avoid price volatility:</i></b>
+                        </p>
+                    </div>
+                </div>
+            <hr>
+            </div>
+            <div style="width: 50%; float:left; background-color: #231f20;" >
+                <h1 style="text-align:center; color:#F5BD1F;"> 1) Dollar Cost Averaging:</h1> 
+                <p style="margin:5%; text-align:center; font-size:20px; color:#F5BD1F;">
+                    The dollar-cost average technique may appear difficult, but it isn't. Investing a specific amount of money at regular periods, such as once a week or once a month, is known as dollar-cost averaging. When the stock price falls, that fixed sum buys more shares, and when the stock price rises, it buys less shares, but it evens out the average price you pay. Investors can set up an automatic investment plan with several online brokerage services.
+                </p>
+                <img src="DollarCostAverage.jpg" id="methods" style="margin:5%;">
+            </div> 
+            <div style="width: 50%; float:right; background-color: #231f20;">
+                <h1 style="text-align:center; color:#F5BD1F;">2) Purchase "the basket":</h1>
+                <p style="margin:5%; text-align:center; font-size:20px; color:#F5BD1F;">
+                    If you can't decide which of the firms in a certain industry will win in the long run. Get them all! Purchasing a stock basket relieves the stress of selecting "the one." If you have a position in all of the players that pass your analysis, you won't miss out if one of them takes off, and you can utilise the profits from that winner to cover any losses. This technique will also assist you in determining whether firm is "the one" so that you may increase your stake if necessary.
+                </p>
+                <img src="grabthebasket.jpg" id="methods" style="margin:5%;">
+            </div>
+            </div>
+            <hr>
+        </div>
+
+        <hr>
+       
+        <script type="text/javascript">
+            // based on which button you select in the HTML, it will offer different commands
+            function pic(picture) {
+            var picture;
+            // eg. if your age is under 20, you will get the following image and text
+                if (picture.value === 'Under 20') {
+                document.getElementById("png").src = "20.png";
+                document.getElementById("paragraph").innerHTML = "Playing with bonds are more on the safer side. When you are young, especially before your 20s, you want to get into stocks as much as you can. Obviously with stocks, greater risk implies greater reward. Ensure that when it comes to investing, stocks remain your priority.";
+            // eg. if your age is between 20 to 30, you will get the following image and text
+                } else if (picture.value === '20-30') {
+                document.getElementById("png").src = "20-30.png";
+                document.getElementById("paragraph").innerHTML = "Going into your 20s, you still want to take risks, but maybe dapple into bonds now. Bonds, again, are a much safer investment, and can therefore slowly appreciate in value. But even at this age, stocks are still the surperior option.";
+                
+                } else if (picture.value === '30-40') {
+                document.getElementById("png").src = "30-40.png";
+                document.getElementById("paragraph").innerHTML = "Now hitting your 30s, you want to take it a little bit safer. Bonds are slowly becoming more appealing, especially since you've saved up a bit more cash since your earlier ages. You want to be much more cautious when you're playing with big money.";
+                
+                } else if (picture.value === '40-50') {
+                document.getElementById("png").src = "40-50.png";
+                document.getElementById("paragraph").innerHTML = "At this age, most have families, and don't want to take any drastic chances. Of course, stocks are still a great investment option. But when the future of your families depend on it, you always want to be safe. Therefore, investing a good chunk of your cash into bonds at this age is a very smart choice.";
+                
+                } else if (picture.value === '50-60') {
+                document.getElementById("png").src = "50-60.png";
+                document.getElementById("paragraph").innerHTML = "As you slowly get to retirement age, you want to make sure you don't take too many chances, especially since you won't be entering the workforce after retirement. You want to live off your investments, and slowly building wealth through bonds is a great option.";
+                
+                } else if (picture.value === '60-70') {
+                document.getElementById("png").src = "60-70.png";
+                document.getElementById("paragraph").innerHTML = "As you slowly get to retirement age, you want to make sure you don't take too many chances, especially since you won't be entering the workforce after retirement. You want to live off your investments, and slowly building wealth through bonds is a great option.";
+                } else if (picture.value === '70-80') {
+                document.getElementById("png").src = "70-80.png";
+                document.getElementById("paragraph").innerHTML = "Now that you're into retirement, this is the age where you refrain from taking risks that could deplete your hard-earned savings. You want to be super conservative, and go right into bonds for those safe returns.";
+                
+                } else if (picture.value === 'Over 80') {
+                document.getElementById("png").src = "80.png";
+                document.getElementById("paragraph").innerHTML = "At this point, you've hopefully emassed enough wealth that you don't need to take the risk of stocks. The returns on yeilds should suffice for a very nice retirement with great living standards.";
+                
+                } 
+            }
+
+
+        </script>
+    </body>
+</html>
+
+   
